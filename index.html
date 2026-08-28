@@ -1,0 +1,313 @@
+<!-- ================= FREE COURSES ================= -->
+<section id="free-courses" class="courses-section">
+
+  <div class="courses-header">
+    <span class="section-badge">FREE LEARNING</span>
+    <h2>Free Engineering Courses</h2>
+    <p>
+      Learn CSE, ECE, EEE and Civil Engineering subjects from
+      free online courses.
+    </p>
+  </div>
+
+  <!-- Search -->
+  <div class="course-controls">
+    <input
+      type="text"
+      id="courseSearch"
+      placeholder="🔍 Search courses..."
+      onkeyup="filterCourses()"
+    />
+
+    <div class="course-filters">
+      <button class="filter-btn active" onclick="filterBranch('all', this)">
+        All
+      </button>
+
+      <button class="filter-btn" onclick="filterBranch('cse', this)">
+        💻 CSE
+      </button>
+
+      <button class="filter-btn" onclick="filterBranch('ece', this)">
+        📡 ECE
+      </button>
+
+      <button class="filter-btn" onclick="filterBranch('eee', this)">
+        ⚡ EEE
+      </button>
+
+      <button class="filter-btn" onclick="filterBranch('civil', this)">
+        🏗️ Civil
+      </button>
+    </div>
+  </div>
+
+  <!-- Course Cards -->
+  <div class="courses-grid" id="coursesGrid">
+
+    <!-- CSE -->
+    <div class="course-card" data-branch="cse">
+      <div class="course-icon">💻</div>
+      <span class="course-branch">CSE</span>
+      <h3>Programming in C</h3>
+      <p>Learn programming fundamentals, algorithms and problem solving.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="cse">
+      <div class="course-icon">🤖</div>
+      <span class="course-branch">CSE</span>
+      <h3>Artificial Intelligence</h3>
+      <p>Explore AI concepts, search, reasoning and intelligent systems.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="cse">
+      <div class="course-icon">📊</div>
+      <span class="course-branch">CSE</span>
+      <h3>Data Structures & Algorithms</h3>
+      <p>Build strong foundations in data structures and algorithms.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+
+    <!-- ECE -->
+    <div class="course-card" data-branch="ece">
+      <div class="course-icon">📡</div>
+      <span class="course-branch">ECE</span>
+      <h3>Digital Circuits</h3>
+      <p>Learn digital logic, combinational and sequential circuits.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="ece">
+      <div class="course-icon">🔌</div>
+      <span class="course-branch">ECE</span>
+      <h3>VLSI Design</h3>
+      <p>Learn VLSI design concepts, digital systems and chip design.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="ece">
+      <div class="course-icon">📶</div>
+      <span class="course-branch">ECE</span>
+      <h3>Digital Signal Processing</h3>
+      <p>Understand signals, systems and digital signal processing.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+
+    <!-- EEE -->
+    <div class="course-card" data-branch="eee">
+      <div class="course-icon">⚡</div>
+      <span class="course-branch">EEE</span>
+      <h3>Power Systems</h3>
+      <p>Learn electrical power generation, transmission and distribution.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="eee">
+      <div class="course-icon">🎛️</div>
+      <span class="course-branch">EEE</span>
+      <h3>Control Systems</h3>
+      <p>Study feedback systems, stability and control engineering.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="eee">
+      <div class="course-icon">🔋</div>
+      <span class="course-branch">EEE</span>
+      <h3>Power Electronics</h3>
+      <p>Learn converters, power semiconductor devices and applications.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+
+    <!-- CIVIL -->
+    <div class="course-card" data-branch="civil">
+      <div class="course-icon">🏗️</div>
+      <span class="course-branch">CIVIL</span>
+      <h3>Structural Engineering</h3>
+      <p>Learn structural analysis and fundamentals of structural design.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="civil">
+      <div class="course-icon">🌊</div>
+      <span class="course-branch">CIVIL</span>
+      <h3>Fluid Mechanics</h3>
+      <p>Understand fluid flow, pressure, hydraulics and applications.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+    <div class="course-card" data-branch="civil">
+      <div class="course-icon">🌱</div>
+      <span class="course-branch">CIVIL</span>
+      <h3>Environmental Engineering</h3>
+      <p>Learn water, waste, pollution and environmental engineering.</p>
+
+      <div class="course-info">
+        <span>🎓 NPTEL</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.nptel.ac.in/courses"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Course →
+      </a>
+    </div>
+
+  </div>
+
+  <p id="noCourses" class="no-courses">
+    No courses found.
+  </p>
+
+</section>
