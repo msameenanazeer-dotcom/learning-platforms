@@ -1,312 +1,699 @@
-<!-- ================= FREE COURSES ================= -->
+<!-- ================= FREE LEARNING ================= -->
 <section id="free-courses" class="courses-section">
 
   <div class="courses-header">
     <span class="section-badge">FREE LEARNING</span>
-    <h2>Free Engineering Courses</h2>
+
+    <h2>Free Courses & Learning Resources</h2>
+
     <p>
-      Learn CSE, ECE, EEE and Civil Engineering subjects from
-      free online courses.
+      Learn programming, electronics, electrical engineering,
+      civil engineering, AI, VLSI and more from free learning platforms.
     </p>
   </div>
 
+
   <!-- Search -->
   <div class="course-controls">
+
     <input
       type="text"
       id="courseSearch"
-      placeholder="🔍 Search courses..."
+      placeholder="🔍 Search platforms, subjects or skills..."
       onkeyup="filterCourses()"
     />
 
+    <!-- Branch Filters -->
     <div class="course-filters">
-      <button class="filter-btn active" onclick="filterBranch('all', this)">
-        All
+
+      <button
+        class="filter-btn active"
+        onclick="filterBranch('all', this)"
+      >
+        🌐 All
       </button>
 
-      <button class="filter-btn" onclick="filterBranch('cse', this)">
+      <button
+        class="filter-btn"
+        onclick="filterBranch('cse', this)"
+      >
         💻 CSE
       </button>
 
-      <button class="filter-btn" onclick="filterBranch('ece', this)">
+      <button
+        class="filter-btn"
+        onclick="filterBranch('ece', this)"
+      >
         📡 ECE
       </button>
 
-      <button class="filter-btn" onclick="filterBranch('eee', this)">
+      <button
+        class="filter-btn"
+        onclick="filterBranch('eee', this)"
+      >
         ⚡ EEE
       </button>
 
-      <button class="filter-btn" onclick="filterBranch('civil', this)">
+      <button
+        class="filter-btn"
+        onclick="filterBranch('civil', this)"
+      >
         🏗️ Civil
       </button>
+
+      <button
+        class="filter-btn"
+        onclick="filterBranch('ai', this)"
+      >
+        🤖 AI / ML
+      </button>
+
+      <button
+        class="filter-btn"
+        onclick="filterBranch('vlsi', this)"
+      >
+        🔬 VLSI
+      </button>
+
+      <button
+        class="filter-btn"
+        onclick="filterBranch('general', this)"
+      >
+        📚 General
+      </button>
+
     </div>
   </div>
 
-  <!-- Course Cards -->
+
+  <!-- ================= COURSE CARDS ================= -->
+
   <div class="courses-grid" id="coursesGrid">
 
-    <!-- CSE -->
-    <div class="course-card" data-branch="cse">
+
+    <!-- FREECODECAMP -->
+    <div class="course-card"
+         data-branch="cse"
+         data-search="freecodecamp programming javascript python web development algorithms">
+
       <div class="course-icon">💻</div>
+
       <span class="course-branch">CSE</span>
-      <h3>Programming in C</h3>
-      <p>Learn programming fundamentals, algorithms and problem solving.</p>
+
+      <h3>freeCodeCamp</h3>
+
+      <p>
+        Free courses for programming, web development,
+        Python, JavaScript, algorithms and data structures.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
+        <span>🌐 Online</span>
         <span>🆓 Free</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.freecodecamp.org/learn/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Learn Free →
       </a>
+
     </div>
 
-    <div class="course-card" data-branch="cse">
+
+    <!-- MIT OCW -->
+    <div class="course-card"
+         data-branch="general"
+         data-search="MIT open courseware computer science electrical engineering civil engineering mathematics physics">
+
+      <div class="course-icon">🎓</div>
+
+      <span class="course-branch">GENERAL</span>
+
+      <h3>MIT OpenCourseWare</h3>
+
+      <p>
+        Free MIT course materials including lectures,
+        assignments, exams and engineering subjects.
+      </p>
+
+      <div class="course-info">
+        <span>🏫 MIT</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://ocw.mit.edu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Explore MIT →
+      </a>
+
+    </div>
+
+
+    <!-- HARVARD CS50 -->
+    <div class="course-card"
+         data-branch="cse"
+         data-search="harvard CS50 computer science programming C Python SQL web development">
+
+      <div class="course-icon">🧑‍💻</div>
+
+      <span class="course-branch">CSE</span>
+
+      <h3>Harvard CS50</h3>
+
+      <p>
+        Learn computer science and programming with
+        Harvard's popular introductory courses.
+      </p>
+
+      <div class="course-info">
+        <span>🏫 Harvard</span>
+        <span>🆓 Learn Free</span>
+      </div>
+
+      <a
+        href="https://cs50.harvard.edu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Start Learning →
+      </a>
+
+    </div>
+
+
+    <!-- KHAN ACADEMY -->
+    <div class="course-card"
+         data-branch="general"
+         data-search="Khan Academy mathematics physics computer science statistics">
+
+      <div class="course-icon">📐</div>
+
+      <span class="course-branch">GENERAL</span>
+
+      <h3>Khan Academy</h3>
+
+      <p>
+        Free learning in mathematics, physics, computing,
+        statistics and other foundational subjects.
+      </p>
+
+      <div class="course-info">
+        <span>📚 Education</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.khanacademy.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Learn Free →
+      </a>
+
+    </div>
+
+
+    <!-- MICROSOFT LEARN -->
+    <div class="course-card"
+         data-branch="cse"
+         data-search="Microsoft Learn Azure cloud computing AI data programming developer">
+
+      <div class="course-icon">☁️</div>
+
+      <span class="course-branch">CSE</span>
+
+      <h3>Microsoft Learn</h3>
+
+      <p>
+        Free learning paths for Azure, cloud computing,
+        AI, data, programming and developer technologies.
+      </p>
+
+      <div class="course-info">
+        <span>💻 Microsoft</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://learn.microsoft.com/training/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Learn Free →
+      </a>
+
+    </div>
+
+
+    <!-- CISCO -->
+    <div class="course-card"
+         data-branch="cse"
+         data-search="Cisco networking cybersecurity networking python IoT">
+
+      <div class="course-icon">🌐</div>
+
+      <span class="course-branch">CSE</span>
+
+      <h3>Cisco Networking Academy</h3>
+
+      <p>
+        Free learning resources covering networking,
+        cybersecurity, Python, IoT and digital skills.
+      </p>
+
+      <div class="course-info">
+        <span>🔐 Networking</span>
+        <span>🆓 Free Options</span>
+      </div>
+
+      <a
+        href="https://www.netacad.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Explore →
+      </a>
+
+    </div>
+
+
+    <!-- IBM SKILLSBUILD -->
+    <div class="course-card"
+         data-branch="ai"
+         data-search="IBM SkillsBuild AI machine learning cloud cybersecurity data science">
+
       <div class="course-icon">🤖</div>
-      <span class="course-branch">CSE</span>
-      <h3>Artificial Intelligence</h3>
-      <p>Explore AI concepts, search, reasoning and intelligent systems.</p>
+
+      <span class="course-branch">AI / ML</span>
+
+      <h3>IBM SkillsBuild</h3>
+
+      <p>
+        Free learning resources in AI, data science,
+        cybersecurity, cloud and workplace skills.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
+        <span>🤖 IBM</span>
         <span>🆓 Free</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://skillsbuild.org/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Start Learning →
       </a>
+
     </div>
 
-    <div class="course-card" data-branch="cse">
-      <div class="course-icon">📊</div>
-      <span class="course-branch">CSE</span>
-      <h3>Data Structures & Algorithms</h3>
-      <p>Build strong foundations in data structures and algorithms.</p>
+
+    <!-- GOOGLE SKILLS -->
+    <div class="course-card"
+         data-branch="ai"
+         data-search="Google AI machine learning cloud data analytics cybersecurity">
+
+      <div class="course-icon">🔎</div>
+
+      <span class="course-branch">AI / ML</span>
+
+      <h3>Google Skills</h3>
+
+      <p>
+        Explore Google's learning resources for AI,
+        cloud, data, cybersecurity and technology skills.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
+        <span>🌐 Google</span>
+        <span>🆓 Free Options</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.skills.google/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Explore →
       </a>
+
+    </div>
+
+
+    <!-- VLSI -->
+    <div class="course-card"
+         data-branch="vlsi"
+         data-search="VLSI digital electronics semiconductor circuits embedded FPGA hardware">
+
+      <div class="course-icon">🔬</div>
+
+      <span class="course-branch">VLSI</span>
+
+      <h3>VLSI & Digital Electronics Resources</h3>
+
+      <p>
+        Explore free learning materials for digital logic,
+        electronics, semiconductor concepts and hardware design.
+      </p>
+
+      <div class="course-info">
+        <span>🔧 Hardware</span>
+        <span>🆓 Free Resources</span>
+      </div>
+
+      <a
+        href="https://www.electronics-tutorials.ws/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Learn Electronics →
+      </a>
+
     </div>
 
 
     <!-- ECE -->
-    <div class="course-card" data-branch="ece">
+    <div class="course-card"
+         data-branch="ece"
+         data-search="electronics ECE circuits digital electronics analog electronics communication">
+
       <div class="course-icon">📡</div>
+
       <span class="course-branch">ECE</span>
-      <h3>Digital Circuits</h3>
-      <p>Learn digital logic, combinational and sequential circuits.</p>
+
+      <h3>Electronics Tutorials</h3>
+
+      <p>
+        Free tutorials covering electronic circuits,
+        digital electronics, semiconductors and components.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
+        <span>🔌 Electronics</span>
         <span>🆓 Free</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.electronics-tutorials.ws/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Start Learning →
       </a>
-    </div>
 
-    <div class="course-card" data-branch="ece">
-      <div class="course-icon">🔌</div>
-      <span class="course-branch">ECE</span>
-      <h3>VLSI Design</h3>
-      <p>Learn VLSI design concepts, digital systems and chip design.</p>
-
-      <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
-      </div>
-
-      <a
-        href="https://www.nptel.ac.in/courses"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="course-btn"
-      >
-        Start Course →
-      </a>
-    </div>
-
-    <div class="course-card" data-branch="ece">
-      <div class="course-icon">📶</div>
-      <span class="course-branch">ECE</span>
-      <h3>Digital Signal Processing</h3>
-      <p>Understand signals, systems and digital signal processing.</p>
-
-      <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
-      </div>
-
-      <a
-        href="https://www.nptel.ac.in/courses"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="course-btn"
-      >
-        Start Course →
-      </a>
     </div>
 
 
     <!-- EEE -->
-    <div class="course-card" data-branch="eee">
+    <div class="course-card"
+         data-branch="eee"
+         data-search="electrical engineering circuits power electronics motors generators control systems">
+
       <div class="course-icon">⚡</div>
+
       <span class="course-branch">EEE</span>
-      <h3>Power Systems</h3>
-      <p>Learn electrical power generation, transmission and distribution.</p>
+
+      <h3>Electrical Engineering Resources</h3>
+
+      <p>
+        Free tutorials for electrical circuits,
+        machines, power electronics and control systems.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
+        <span>⚡ Electrical</span>
         <span>🆓 Free</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.electrical4u.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Learn Electrical →
       </a>
-    </div>
 
-    <div class="course-card" data-branch="eee">
-      <div class="course-icon">🎛️</div>
-      <span class="course-branch">EEE</span>
-      <h3>Control Systems</h3>
-      <p>Study feedback systems, stability and control engineering.</p>
-
-      <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
-      </div>
-
-      <a
-        href="https://www.nptel.ac.in/courses"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="course-btn"
-      >
-        Start Course →
-      </a>
-    </div>
-
-    <div class="course-card" data-branch="eee">
-      <div class="course-icon">🔋</div>
-      <span class="course-branch">EEE</span>
-      <h3>Power Electronics</h3>
-      <p>Learn converters, power semiconductor devices and applications.</p>
-
-      <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
-      </div>
-
-      <a
-        href="https://www.nptel.ac.in/courses"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="course-btn"
-      >
-        Start Course →
-      </a>
     </div>
 
 
     <!-- CIVIL -->
-    <div class="course-card" data-branch="civil">
+    <div class="course-card"
+         data-branch="civil"
+         data-search="civil engineering structural concrete soil transportation surveying construction">
+
       <div class="course-icon">🏗️</div>
+
       <span class="course-branch">CIVIL</span>
-      <h3>Structural Engineering</h3>
-      <p>Learn structural analysis and fundamentals of structural design.</p>
+
+      <h3>Civil Engineering Resources</h3>
+
+      <p>
+        Free educational resources covering structures,
+        construction, concrete, soil and transportation.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
+        <span>🏗️ Engineering</span>
+        <span>🆓 Free Resources</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.civilengineeringforum.me/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Explore Civil →
       </a>
+
     </div>
 
-    <div class="course-card" data-branch="civil">
-      <div class="course-icon">🌊</div>
-      <span class="course-branch">CIVIL</span>
-      <h3>Fluid Mechanics</h3>
-      <p>Understand fluid flow, pressure, hydraulics and applications.</p>
+
+    <!-- OPENLEARN -->
+    <div class="course-card"
+         data-branch="general"
+         data-search="OpenLearn free courses technology engineering science computing">
+
+      <div class="course-icon">📖</div>
+
+      <span class="course-branch">GENERAL</span>
+
+      <h3>OpenLearn</h3>
+
+      <p>
+        Free courses and learning materials from
+        The Open University.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
+        <span>🏫 Open University</span>
         <span>🆓 Free</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.open.edu/openlearn/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Explore Courses →
       </a>
+
     </div>
 
-    <div class="course-card" data-branch="civil">
-      <div class="course-icon">🌱</div>
-      <span class="course-branch">CIVIL</span>
-      <h3>Environmental Engineering</h3>
-      <p>Learn water, waste, pollution and environmental engineering.</p>
+
+    <!-- W3SCHOOLS -->
+    <div class="course-card"
+         data-branch="cse"
+         data-search="W3Schools HTML CSS JavaScript Python SQL Java web development">
+
+      <div class="course-icon">🌐</div>
+
+      <span class="course-branch">CSE</span>
+
+      <h3>W3Schools</h3>
+
+      <p>
+        Free tutorials for HTML, CSS, JavaScript,
+        Python, SQL, Java and web development.
+      </p>
 
       <div class="course-info">
-        <span>🎓 NPTEL</span>
-        <span>🆓 Free</span>
+        <span>💻 Programming</span>
+        <span>🆓 Free Tutorials</span>
       </div>
 
       <a
-        href="https://www.nptel.ac.in/courses"
+        href="https://www.w3schools.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="course-btn"
       >
-        Start Course →
+        Learn Coding →
       </a>
+
+    </div>
+
+
+    <!-- SPOKEN TUTORIAL -->
+    <div class="course-card"
+         data-branch="general"
+         data-search="Spoken Tutorial IIT programming Linux Python Java C C++ electronics">
+
+      <div class="course-icon">🎥</div>
+
+      <span class="course-branch">GENERAL</span>
+
+      <h3>Spoken Tutorial</h3>
+
+      <p>
+        Free self-learning tutorials covering programming,
+        Linux, software tools and technical subjects.
+      </p>
+
+      <div class="course-info">
+        <span>🏫 IIT Bombay</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://spoken-tutorial.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Learn Free →
+      </a>
+
+    </div>
+
+
+    <!-- FOSSEE -->
+    <div class="course-card"
+         data-branch="eee"
+         data-search="FOSSEE open source engineering Scilab Python simulation electronics">
+
+      <div class="course-icon">🧪</div>
+
+      <span class="course-branch">EEE</span>
+
+      <h3>FOSSEE</h3>
+
+      <p>
+        Free and open-source software resources for
+        engineering education, simulation and computation.
+      </p>
+
+      <div class="course-info">
+        <span>🔓 Open Source</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://fossee.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Explore FOSSEE →
+      </a>
+
+    </div>
+
+
+    <!-- VIRTUAL LABS -->
+    <div class="course-card"
+         data-branch="ece"
+         data-search="Virtual Labs electronics electrical engineering experiments">
+
+      <div class="course-icon">🧑‍🔬</div>
+
+      <span class="course-branch">ECE</span>
+
+      <h3>Virtual Labs</h3>
+
+      <p>
+        Perform online laboratory experiments in engineering
+        and science subjects.
+      </p>
+
+      <div class="course-info">
+        <span>🔬 Labs</span>
+        <span>🆓 Free</span>
+      </div>
+
+      <a
+        href="https://www.vlab.co.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Try Virtual Labs →
+      </a>
+
+    </div>
+
+
+    <!-- SWAYAM -->
+    <div class="course-card"
+         data-branch="general"
+         data-search="SWAYAM free university courses engineering technology science India">
+
+      <div class="course-icon">🎓</div>
+
+      <span class="course-branch">GENERAL</span>
+
+      <h3>SWAYAM</h3>
+
+      <p>
+        Free courses from universities and institutions
+        across India covering engineering and other subjects.
+      </p>
+
+      <div class="course-info">
+        <span>🇮🇳 India</span>
+        <span>🆓 Free Courses</span>
+      </div>
+
+      <a
+        href="https://www.swayam.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="course-btn"
+      >
+        Explore SWAYAM →
+      </a>
+
     </div>
 
   </div>
 
+
+  <!-- No Results -->
   <p id="noCourses" class="no-courses">
+    😕 No matching learning resources found.
+  </p>
+
+</section>
+
     No courses found.
   </p>
 
